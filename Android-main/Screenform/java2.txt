@@ -1,0 +1,49 @@
+ package com.example.screenform;
+
+ import android.os.Bundle;
+ import android.view.View;
+ import android.widget.Button;
+ import android.widget.EditText;
+ import android.widget.TextView;
+ import androidx.appcompat.app.AppCompatActivity;
+
+ public class MainActivity extends AppCompatActivity {
+
+     EditText username, password, address, gender, age;
+     Button submitButton;
+     TextView resultView;
+
+     @Override
+     protected void onCreate(Bundle savedInstanceState) {
+         super.onCreate(savedInstanceState);
+         setContentView(R.layout.activity_main); // make sure this matches your layout file name
+
+         username = findViewById(R.id.editTextText);
+         password = findViewById(R.id.editTextText4);
+         address = findViewById(R.id.editTextText2);
+         gender = findViewById(R.id.editTextText3);
+         age = findViewById(R.id.editTextText5);
+         submitButton = findViewById(R.id.button);
+         resultView = findViewById(R.id.textViewResult);
+
+         submitButton.setOnClickListener(new View.OnClickListener() {
+             @Override
+             public void onClick(View view) {
+                 String user = username.getText().toString();
+                 String pass = password.getText().toString();
+                 String addr = address.getText().toString();
+                 String gen = gender.getText().toString();
+                 String ag = age.getText().toString();
+
+                 String result = "Username: " + user + "\n" +
+                         "Password: " + pass + "\n" +
+                         "Address: " + addr + "\n" +
+                         "Gender: " + gen + "\n" +
+                         "Age: " + ag;
+
+                 resultView.setText(result);
+             }
+         });
+     }
+ }
+

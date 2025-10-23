@@ -1,0 +1,87 @@
+4.Design an application to design a visiting card using relative layout.The company name should be displayed in capital letters,aligned to center. Informations like the name of the employee,job title,phone number,address,email and the website address are to be displayed. insert a horizontal line between the job title and the phone number.
+
+
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/companyName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="INFOPARK"
+        android:textStyle="bold"
+        android:textSize="32dp"
+        android:gravity="center" />
+
+    <TextView
+        android:id="@+id/employeeName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/companyName"
+        android:layout_marginTop="20dp"
+        android:text="Jeena Mathew"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"
+        android:textSize="25sp" />
+
+    <TextView
+        android:id="@+id/jobTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/employeeName"
+        android:text="Software Engineer"
+        android:layout_centerHorizontal="true"
+        android:textSize="16sp"
+        android:layout_marginTop="4dp" />
+
+    <View
+        android:id="@+id/divider"
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:layout_below="@id/jobTitle"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="8dp"
+        android:background="#000000" />
+
+    <TextView
+        android:id="@+id/phoneNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/divider"
+        android:text="+91 7012577731"
+        android:layout_centerHorizontal="true"
+        android:textSize="18sp" />
+    <TextView
+        android:id="@+id/address"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/phoneNumber"
+        android:text="SB Colony Road, Calicut, Kerala, India"
+        android:layout_centerHorizontal="true"
+        android:textSize="18sp"
+        android:layout_marginTop="4dp" />
+
+    <TextView
+        android:id="@+id/email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/address"
+        android:text="jeenamathewinfo@gmail.com"
+        android:layout_centerHorizontal="true"
+        android:textSize="18sp"
+        android:layout_marginTop="4dp" />
+
+    <TextView
+        android:id="@+id/website"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/email"
+        android:text="www.infoparkkochi.com"
+        android:layout_centerHorizontal="true"
+        android:textSize="18sp"
+        android:layout_marginTop="4dp" />
+</RelativeLayout>
+

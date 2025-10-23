@@ -1,0 +1,130 @@
+STRING OPERATION
+
+a=input("Enter a word:")
+print("length of the word=",len(a))
+b=input("enter another word:")
+result=a+b
+print("concatenated string=",result)
+print("uppercase=",a.upper())
+print("lowecase=",b.lower())
+print("sliced string=",a[:4])
+
+O/P
+
+Enter a word:aneesa
+length of the word= 6
+enter another word:ashraf
+concatenated string= aneesaashraf
+uppercase= ANEESA
+lowecase= ashraf
+sliced string= anee
+
+
+ARITHMETIC OPERATIONS
+
+n1=int(input("enter first number:"))
+n2=int(input("enter second number:"))
+print("sum=",n1 + n2)
+print("subtraction=",n1 - n2)
+print("multiplication=",n1 * n2)
+print("division=",n1 / n2)
+
+O/P
+
+enter first number:10
+enter second number:5
+sum= 15
+subtraction= 5
+multiplication= 50
+division= 2.0
+
+
+
+
+BOOLEAN OPERATIONS
+
+a=input("enter true or false for A=")
+b=input("enter true or false for B=")
+print("A AND B=",a and b)
+print("A OR B=",a or b)
+print("NOT A=", not a )
+
+O/P
+
+enter true or false for A=true
+enter true or false for B=false
+A AND B= false
+A OR B= true
+NOT A= False
+
+
+LIST OPERATION
+
+list=[1,2,3,4,5]
+print("list is=",list)
+print("first element=",list[0])
+print("last 2 elements=",list[3:5])
+print("last element=",list[-1])
+
+list.append(7)
+print("after appending 7=",list)
+
+poped_element=list.pop()
+print("after popping=",list)
+
+O/P
+
+list is= [1, 2, 3, 4, 5]
+first element= 1
+last 2 elements= [4, 5]
+last element= 5
+after appending 7= [1, 2, 3, 4, 5, 7]
+after popping= [1, 2, 3, 4, 5]
+
+
+SET OPERATION
+
+set1={1,2,3,4,5}
+set2={2,3,4,6,8}
+print("set1=",set1)
+print("set2=",set2)
+print("union=",set1.union(set2))
+print("intersection=",set1.intersection(set2))
+print("difference=",set1.difference(set2))
+
+O/P
+
+set1= {1, 2, 3, 4, 5}
+set2= {2, 3, 4, 6, 8}
+union= {1, 2, 3, 4, 5, 6, 8}
+intersection= {2, 3, 4}
+difference= {1, 5}
+
+DICTIONERY
+
+d={'name':'aneesa','age':'21'}
+print("the dictionary is=",d)
+
+print(d['name'])
+print('name' in d)
+d['dept']='mca'
+print(d)
+print(d['dept'])
+
+
+O/P
+
+the dictionary is= {'name': 'aneesa', 'age': '21'}
+aneesa
+True
+{'name': 'aneesa', 'age': '21', 'dept': 'mca'}
+mca
+
+
+
+
+
+
+
+
+
